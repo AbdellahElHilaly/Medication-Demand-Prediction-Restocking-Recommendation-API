@@ -1,0 +1,34 @@
+# Python environment and caches
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+
+# Project database ignores
+*.db
+medication_demand.db
+
+# Large generated data files (regenerated via pipeline)
+resources/data/processed/training_data.csv
+
+# Archives and temporary files
+*.zip
+*.tmp
+*.log
+
+# Explicitly ensure binary weight files are tracked
+!resources/models/medication_demand_lstm.pth
+!resources/models/scalers.pkl
